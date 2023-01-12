@@ -338,7 +338,7 @@ padding: 20px 10px;
   padding: 20px;
 }
 .product .cart-product-image{
-  width:180px ;
+  width:150px ;
   height: 150px;
     border-radius: 15px;
  background-color: #ebebeb;
@@ -419,15 +419,12 @@ padding: 30px 65px;
   border-radius: 15px;
    background-color: #ebebeb;
 
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
-.product-detail-image:hover{
-  background-color: #ff5411;
 
-}
 .small-images-container{
   display: flex;
   gap: 10px;
