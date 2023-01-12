@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { AiOutlineShopping } from 'react-icons/ai'
 
 import { Cart } from './';
-import Image from 'next/Image';
+import Image from 'next/image';
 import { useStateContext} from '../context/StateContext';
 import logo from '../public/assets/logo.png';
 const Navbar = () => {
