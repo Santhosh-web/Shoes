@@ -647,11 +647,20 @@ font-size: 50px;
     flex-wrap: wrap;
     }
   .product-detail-container .product-detail-image{
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
   }
   .cart-container{
-    width: 415px;
+    height: 100vh;
+    width: 500px;
+    background-color: white;
+    float: right;
+    padding: 40px 10px;
+    position: relative;
+    
+  }
+  .cart-container{
+    width: 350px;
   padding: 4px;
   }
   .cart-heading{
