@@ -8,7 +8,7 @@ import { useStateContext } from '../context/StateContext';
 import { urlFor } from '../lib/client';
 import getStripe from '../lib/getStripe';
 
-const Cart = () => {
+const Cart = ({theme}) => {
   const cartRef = useRef();
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
 
@@ -34,7 +34,7 @@ const Cart = () => {
 
   return (
     <div className="cart-wrapper" ref={cartRef}>
-      <div className="cart-container">
+      <div className={`cart-container ${theme}`}>
         <button
         type="button"
         className="cart-heading"
@@ -60,7 +60,7 @@ const Cart = () => {
           </div>
         )}
 
-        <div className="product-container">
+        <div className={`product-container ${theme}`}>
           {cartItems.length >= 1 && cartItems.map((item) => (
             <div className="product" key={item._id}>
               <img src={urlFor(item?.image[0])} className="cart-product-image" />
