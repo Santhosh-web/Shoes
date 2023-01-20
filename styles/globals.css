@@ -18,7 +18,7 @@ body, * {
 
 }
 .dark{
-  background-color:#212121;
+  background-color:#000;
  color: white;
  --toggle-color:white;
  --price-color:white;
@@ -35,6 +35,66 @@ margin: auto;
 width: 100%;
 
 
+}
+.explore{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 30px 10px;
+}
+.explore h1
+{
+  color: #ff5411;
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.explore span{
+  color: var(--price-color);
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.explore h3{
+  line-height: 3rem;
+  font-weight: 500;
+  margin: 30px 0;
+  font-size: 18px;
+  text-align: justify;
+}
+.explore button{
+  border: none;
+  background-color: #ff5411 ;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 25px;
+  padding: 15px 35px;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+.filter.active{
+  border: 1px solid;
+  background-color: white;
+  color: #ff5411;
+}
+
+
+.filter button
+{
+border: 1px solid #ff5411;
+background-color: #ff5411;
+color: white;
+font-weight: 500;
+font-size: 15px;
+cursor: pointer;
+padding: 5px 15px;
 }
 .layout{
   padding: 10px;
@@ -122,7 +182,12 @@ width: 100%;
   margin-top: 20px;
   width: 100%;
 }
-
+.filter{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
 .product-card{
   width: 250px;
  cursor: pointer;
@@ -500,7 +565,7 @@ padding: 30px 65px;
 }
 .buttons .add-to-cart{
   padding: 10px 20px;
-
+border: 1px solid var(--toggle-color);
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
@@ -633,7 +698,17 @@ margin-top: 160px;
   .hero-banner-container{
     height: 90vh;
   }
-  
+  .explore{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px 10px;
+  }
 
   .footer-banner-container{
     height: auto;
